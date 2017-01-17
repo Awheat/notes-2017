@@ -1,0 +1,403 @@
+.psl-uc{
+    padding-top: 15px;
+    padding-bottom: 50px;
+    background-color: #f0f1f5;
+}
+.psl-uc-lt{
+    width: 200px;
+    float: left;
+    background-color: #ffffff;
+}
+.category-title{
+    height: 49px;
+    line-height: 49px;
+    font-size: 16px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.category-title i{
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin:0 5px 0 20px;
+    background: url(../../images/detail-icon.png) no-repeat;
+}
+.category-title i.icon-act{
+    background-position: -115px -230px;
+}
+.category-title i.icon-don{
+    background-position: -139px -230px;
+}
+.category-title i.icon-res{
+    background-position: -163px -230px;
+}
+.nav li{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
+    border-left: 3px solid #ffffff;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.nav li a{
+    color: #999999;
+}
+.nav li.cur,
+.nav li:hover{
+    border-color: #579f23;
+    background-color: #eef9f1;
+}
+.nav li.cur a,
+.nav li:hover a{
+    color: #579f23;
+}
+i.smv{
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../../images/index-icon.png) no-repeat;
+    background-size: 105px;
+}
+i.smv.org-v{
+    background-position: -45px 2px;
+}
+i.smv.psl-v{
+    background-position: -70px 2px;
+}
+.psl-uc-rt {
+    width: 855px;
+    float: right;
+    padding: 15px 15px 200px 15px;
+    background-color: #ffffff;
+}
+.psl-uc-rt .top-bar{
+    height: 30px;
+    margin: 15px 0;
+}
+.psl-uc-rt .top-bar a{
+    display: block;
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    float: right;
+    color: #ffffff;
+    background-color: #3bc47e;
+    border-radius: 2px;
+}
+.psl-uc-rt .ctr-list{
+    border: 1px solid #e0e0e0;
+    border-bottom: none;
+}
+.psl-uc-rt .ctr-list .cell{
+    float: left;
+    text-align: center;
+}
+.psl-uc-rt .ctr-list .list-header{
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+}
+.psl-uc-rt .ctr-list .clo-1{
+    display: table;
+    width: 330px;
+}
+.psl-uc-rt .ctr-list .clo-2{
+    width: 110px;
+}
+.psl-uc-rt .ctr-list .clo-3{
+    width: 110px;
+}
+.psl-uc-rt .ctr-list .clo-4{
+    width: 110px;
+}
+.psl-uc-rt .ctr-list .clo-5{
+    width: 150px;
+}
+.psl-uc-rt .ctr-list .row{
+    border-bottom: 1px solid #e0e0e0;
+}
+.psl-uc-rt .ctr-list .row .row-top{
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.psl-uc-rt .ctr-list .row .row-bom{
+    padding: 10px 0;
+    text-indent: 20px;
+    font-size: 12px;
+    background-color: #f2fbf4;
+}
+.psl-uc-rt .ctr-list .row .row-bom .p1{
+    color: #999999;
+}
+.psl-uc-rt .ctr-list .row .row-bom .p2{
+    color: #333333;
+}
+.psl-uc-rt .ctr-list .row .row-bom .p3{
+    color: #ff3236;
+}
+.psl-uc-rt .ctr-list .row .row-bom .p2 span{
+    margin-right: 20px;
+}
+.psl-uc-rt .ctr-list .cell.colspan{
+    width: 170px;
+}
+.psl-uc-rt .ctr-list .clo-1 .cell-img{
+    display: block;
+    width: 90px;
+    height: 70px;
+    float: left;
+}
+.psl-uc-rt .ctr-list .detail{
+    display: table-cell;
+    width: 230px;
+    text-align: left;
+    vertical-align: middle;
+}
+.psl-uc-rt .ctr-list .detail h3{
+    margin-bottom: 5px;
+}
+.psl-uc-rt .ctr-list .detail h3 a{
+    display: block;
+    max-height: 38px;
+    line-height: 19px;
+    overflow: hidden;
+}
+.psl-uc-rt .ctr-list .detail h3 i{
+    display: inline-block;
+    padding: 0 2px;
+    font-size: 12px;
+}
+.psl-uc-rt .ctr-list .detail .online{
+    color: #ffffff;
+    background-color: #579f23;
+}
+.psl-uc-rt .ctr-list .detail .offline{
+    color: #ffffff;
+    background-color: #ff9801;
+}
+.psl-uc-rt .ctr-list .detail .from{
+    color: #999999;
+    margin-top: -10px;
+}
+.psl-uc-rt .ctr-list .detail .date{
+    color: #999999;
+    font-size: 12px;
+}
+.psl-uc-rt .ctr-list .row .cell{
+    line-height: 70px;
+}
+.psl-uc-rt .ctr-list .row .cell > i{
+    color: #999999;
+    font-size: 12px;
+}
+.psl-uc-rt .ctr-list .row .cell.clo-1{
+    line-height: normal;
+}
+.psl-uc-rt .ctr-list .row .green{
+    color: #579f23;
+    font-size: 12px;
+    padding: 0 2px;
+    border:1px solid #579f23;
+}
+.psl-uc-rt .ctr-list .row .red{
+    color: #ff3234;
+    font-size: 12px;
+    padding: 0 2px;
+    border:1px solid #ff3234;
+}
+.psl-uc-rt .ctr-list .row .orange{
+    color: #ff9902;
+    font-size: 12px;
+    padding: 0 2px;
+    border:1px solid #ff9902;
+}
+.psl-uc-rt .ctr-list .row .green{
+    color: #579f23;
+    font-size: 12px;
+    padding: 0 2px;
+    border:1px solid #579f23;
+}
+.psl-uc-rt .ctr-list .row .middle{
+    display: table;
+    height: 70px;
+    font-size: 12px;
+}
+.psl-uc-rt .ctr-list .row .middle a{
+    color: #579f23;
+}
+.psl-uc-rt .ctr-list .row .middle span{
+    display: table-cell;
+    vertical-align: middle;
+}
+.psl-uc-rt .ctr-list .row .middle span i,
+.psl-uc-rt .ctr-list .row .middle span a{
+    display: block;
+    line-height: normal;
+
+}
+.psl-uc-rt .ctr-list .row .middle span i{
+    color: #999999;
+}
+.psl-uc-rt .ctr-list .row a.sa-green{
+    color: #579f23;
+}
+.psl-uc-rt .ctr-list .row a.sa-orange{
+    color: #fe9901;
+}
+
+/* 名单 */
+.name-list{
+    padding: 20px 0 50px;
+    background-color: #f0f1f5;
+}
+.name-list .w{
+    padding: 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 5px;
+}
+.name-list .big-title{
+    color: #999999;
+    font-size: 16px;
+    font-weight: 600;
+}
+.name-list .top-tips{
+    color: #999999;
+    font-size: 12px;
+    padding: 30px 0 20px;
+}
+.name-list .top-tips span{
+    margin-left: 20px;
+}
+.name-list .top-tips i{
+    color: #579f23;
+    font-weight: bold;
+    padding: 0 5px;
+}
+.name-list .top-tips i.orange{
+    color: #f5a95d;
+}
+.name-list .table{
+    width: 100%;
+    border: 1px solid #e0e0e0;
+}
+.name-list .table thead{
+    height: 39px;
+    line-height: 39px;
+    text-align: left;
+}
+.name-list .table thead th{
+    padding: 0 20px;
+    color: #666666;
+}
+.name-list .table thead .icon-option{
+    position: relative;
+    top: 6px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../../images/detail-icon.png);
+    background-position: -190px -230px;
+}
+.name-list .table thead .opt-tips{
+    position: absolute;
+    top: -50px;
+    left: -115px;
+    width: 200px;
+    line-height: 16px;
+    padding: 5px;
+    text-align: left;
+    font-size: 12px;
+    border: 1px solid #fbc394;
+    background-color: #fffdf0;
+}
+.name-list .table thead .opt-tips:after{
+    position: absolute;
+    top: 42px;
+    left: 107px;
+    display: block;
+    content: "";
+    width: 30px;
+    height: 5px;
+    background: url(../../images/list-arrow.png) no-repeat;
+}
+
+.name-list .table tbody{
+    color: #999999;
+    font-size: 12px;
+}
+.name-list .table tr.bgcolor{
+    background-color: #f3f4f8;
+}
+.name-list .table tbody tr:nth-child(even){
+    background:#f3f4f8;
+}
+.name-list .table tr td{
+    padding: 10px 20px;
+}
+.name-list .table .cell{
+    display: inline-block;
+    vertical-align: middle;
+}
+.name-list .table .cell img{
+    display: block;
+    width: 38px;
+    height: 38px;
+    float: left;
+    margin-right: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 100%;
+}
+.name-list .table .cell div{
+    float: left;
+}
+.name-list .table .cell .md{
+    margin-top: 10px;
+}
+.name-list .table .cell div a{
+    color: #999999;
+}
+.name-list .table .cell a,
+.name-list .table .cell .line{
+    color: #579f23;
+}
+.name-list .table .cell .p1{
+    color: #666666;
+}
+.name-list .table .cell .name{
+    color: #999999;
+}
+.name-list .table .cell .smv{
+    position: relative;
+    top: 2px;
+    width: 15px;
+    height: 15px;
+    background: url(../../images/index-icon.png) no-repeat;
+}
+.name-list .table .cell .smv.psl-v{
+    background-position: -40px -168px;
+}
+.name-list .table .cell .smv.org-v{
+    background-position: 0 -168px;
+}
+.name-list .table tr{
+    border-top: 1px solid #e0e0e0;
+}.name-list .table tr i.line{
+    color: #579f23;
+ }

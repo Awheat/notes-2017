@@ -1,0 +1,478 @@
+.search{
+    position: relative;
+    width: 1060px;
+    margin:20px auto;
+    padding: 20px 20px 50px 20px;
+    border: 1px solid #e0e0e0;
+    background-color: #ffffff;
+}
+.search dl{
+    position: relative;
+}
+.search dl .more{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    display: block;
+    width: 30px;
+    height: 20px;
+    color: #999999;
+    cursor: pointer;
+    padding-right: 20px;
+}
+.search dl .more i{
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 15px;
+    height: 10px;
+    background: url(../../images/detail-icon.png) no-repeat;
+}
+.search dl .more i.down{
+    background-position: -200px -60px;
+}
+.search dl .more i.up{
+    background-position: -178px -60px;
+}
+.search dl.category{
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+}
+.search dl.address{
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+.search dl dt{
+    width: 70px;
+    height: 30px;
+    height: 30px;
+    padding: 2px 10px;
+    text-align: right;
+    float: left;
+}
+.search dl dd{
+    width: 960px;
+    min-height: 30px;
+    float: left;
+}
+.search dl dd span{
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 0 5px 5px 0;
+    cursor: pointer;
+}
+.search dl dd .all{
+    display: block;
+    height: 100%;
+    float: left;
+    margin-bottom: 20px;border-radius:2px;
+}
+.search dl dd span:hover{
+    color: #ffffff;
+    background: #579f23;
+}
+.search dd span.active{
+    color: #ffffff;
+    background: #579f23;
+}
+.search dl .others{
+    width: 850px;
+    height: 30px;
+    float: left;
+    overflow: hidden;
+}
+.search .chkbox{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: #f5f5f5;
+}
+.search .chkbox label{
+    margin-left: 20px;
+    color: #999999;
+}
+.search .chkbox label input{
+    position: relative;
+    top: -2px;
+}
+.caption{
+    width: 1100px;
+    height: 30px;
+    line-height: 30px;
+    margin: 50px auto 30px auto;
+}
+.caption .caption-title{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+}
+.caption .caption-btns{
+    float: right;
+}
+.caption .caption-btns a{
+    display: block;
+    float: left;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 23px;
+    border-radius: 30px;
+    margin-top: 2px;
+    margin-left: 10px;
+    color: #ffffff;
+}
+.caption .caption-btns a.green{
+    background: #579f23;
+}
+.caption .caption-btns a.orange{
+    background: #f08126;
+}
+.caption .caption-btns a.red{
+    background: #e94932;
+}
+.active-list ul{
+    width: 1125px;
+}
+.active-list li{
+    position: relative;
+    width: 330px;
+    height: 425px;
+    padding: 10px;
+    float: left;
+    margin-right: 25px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+.active-list li:hover{
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,.5);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,.5);
+    box-shadow:0 0 20px rgba(0,0,0,.5);
+}
+.active-list .act-img{
+    position: relative;
+    height: 240px;
+}
+.active-list .act-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.active-list .act-img span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    color: #ffffff;
+    text-indent: 30px;
+    background: url(../../images/opacity.png);
+}
+.active-list .act-img span:after,
+.active-list .act-date:after{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    content: "";
+    background: url(../../images/index-icon.png) no-repeat;
+}
+.active-list .act-img span:after{
+    background-position: -70px -34px;
+}
+.active-list .act-title{
+    font-size: 16px;
+    padding-top: 10px;
+}
+.active-list .act-title a,
+.active-list .act-title i{
+    display: block;
+    float: left;
+}
+
+.active-list .act-title a{
+    width: 100%;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.active-list .act-title i{
+    color: #ffffff;
+    font-size: 12px;
+    padding: 0px 5px;
+    margin-right: 5px;
+}
+.active-list .act-title i.online{
+    background-color: #579f23;
+}
+.active-list .act-title i.offline{
+    background-color: #f39c12;
+}
+.active-list .org_name{
+    position: relative;
+    color: #999999;
+    font-size: 16px;
+    font-weight: 600;
+    text-indent: 25px;
+}
+.active-list .org_name:after{
+    position: absolute;
+    top:1px;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 20px;
+    content: "";
+    background: url(../../images/detail-icon.png) no-repeat;
+    background-position: -145px -55px;
+}
+.active-list .org_name i{
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../../images/index-icon.png) no-repeat;
+}
+.active-list .org_name i.org,
+.active-list .org_name i.org-v{
+    background-position: -67px -3px;
+}
+.active-list .org_name i.psl,
+.active-list .org_name i.psl-v{
+    background-position: -102px -2px;
+}
+.active-list .tag{
+    margin: 5px 0;
+    height: 22px;
+    overflow: hidden;
+}
+.active-list .tag span{
+    display: inline-block;
+    padding: 0 3px;
+    height: 20px;
+    color: #579f23;
+    margin-right: 5px;
+    border: 1px solid #579f23;
+}
+.active-list .date{
+    color: #999999;
+}
+.active-list .date i{
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+    background: url(../../images/detail-icon.png) no-repeat;
+    background-position: -174px -30px;
+}
+.active-list .btns{
+    display: block;
+    line-height: 17px;
+    color: #ffffff;
+    padding: 8px 0 4px;
+    margin-top: 5px;
+    text-align: center;
+}
+.active-list .btns.green{
+    background: #579f23;
+}
+.active-list .btns.gray{
+    background: #c8c8c8;
+}
+.active-list .btns p{
+    color: #ffffff;
+    font-size: 18px;
+}
+.active-list .btns i{
+    color: #f2f2f2;
+    font-size: 12px;
+}
+
+/* 资源列表 */
+.resource .search dd span:hover{
+    background-color: #f08126;
+}
+.resource .search dd span.active{
+    background-color: #f08126;
+}
+.resource .search dl.address{
+    border-top: 1px solid #e0e0e0;
+}
+.resource .search dl.category{
+    padding-top: 0;
+    border: none;
+}
+
+.resource .w ul{
+    width:1130px !important;
+}
+.resource .w ul li{
+    width: 520px;
+    height: 150px;
+    padding: 10px;
+    float: left;
+    background-color: #ffffff;
+}
+.resource .w .list-lt{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    float: left;
+}
+.resource .w .list-lt i{
+    position: absolute;
+    top: 10px;
+    left: -3px;
+    display: block;
+    width: 50px;
+    height: 30px;
+    background: url(../../images/detail-icon.png) no-repeat;
+}
+.resource .w .list-lt i.ing{
+    background-position: -57px -225px;
+}
+.resource .w .list-lt i.end{
+    background-position: 0px -225px;
+}
+.resource .w .list-rt{
+    width: 310px;
+    float: right;
+}
+.resource .w .list-lt img{
+    width: 100%;
+    height: 100%;
+}
+.resource .list-rt h3 a{
+    display: block;
+    height: 40px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    overflow: hidden;
+}
+.resource .res_cont{
+    height: 24px;
+    color: #999999;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.resource .res_cont i{
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background: url(../../images/detail-icon.png) no-repeat;
+    background-position: -172px -2px;
+}
+.resource .list-rt .btn-need{
+    display: block;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    background-color: #f08126;
+ }
+.resource .list-rt .btn-need.gray{
+    background-color: #999999;
+}
+.resource .list-rt .btn-need i{
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    background: url(../../images/index-icon.png) no-repeat;
+    background-position: -72px -70px;
+}
+
+/* 求助列表 */
+.donate .category .more{
+    top: 3px;
+}
+.donate .active-list .tag span{
+    color: #999999;
+    border-color: #999999;
+}
+.donate .w .act-img i{
+    position: absolute;
+    top: 10px;
+    left: -3px;
+    display: block;
+    width: 50px;
+    height: 30px;
+    background: url(../../images/detail-icon.png) no-repeat;
+}
+.donate .w .act-img i.ing{
+    background-position: -57px -225px;
+}
+.donate .w .act-img i.end{
+    background-position: 0px -225px;
+}
+.donate .search .category{
+    padding-top: 0;
+    border-top: none;
+}
+.progress{
+    margin-top: 15px;
+}
+.progress .progress-bar{
+    position: relative;
+    width: 100%;
+    height: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background-color: #e6e6e6;
+}
+.progress .progress-bar .finish{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 10px;
+    border-radius: 20px;
+    background-color: #579f23;
+}
+.progress .progress-info div{
+    float: left;
+}
+.progress .progress-info div p{
+    font-size: 16px;
+    font-weight: 600;
+}
+.progress .progress-info div span{
+    color: #999999;
+    font-size: 12px;
+}
+.progress .progress-info .reso-num{
+    width: 40%;
+}
+.progress .progress-info .comp_pot{
+    width: 30%;
+    text-align: center;
+}
+.progress .progress-info .surp_day{
+    width: 30%;
+    text-align: right;
+}
+
+.progress.end .progress-bar .finish{
+    background-color: #999999;
+}
+.progress.end .surp_day i{
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+}

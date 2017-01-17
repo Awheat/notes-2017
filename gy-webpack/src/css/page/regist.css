@@ -1,0 +1,313 @@
+.regist .psl-regist{
+    margin: 30px 0 0 50px;
+}
+.regist{
+    width: 100%;
+    height: 490px;
+    border-top: 1px solid #e0e0e0;
+}
+.regist .w{
+    position: relative;
+}
+.regist .psl-regist{
+    width: 600px;
+    float: left;
+}
+.regist .org-regist{
+    width: 400px;
+    float: right;
+}
+.regist .line{
+    position: absolute;
+    top: 30px;
+    left: 650px;
+    width: 1px;
+    height: 430px;
+    background-color: #e0e0e0;
+}
+.regist .regist-title{
+    color: #666;
+    font-size: 18px;
+    margin: 15px 0;
+}
+.regist .form-item{
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.regist label.error{
+    position: absolute;
+    top: 10px;
+    left: 410px;
+    color: #fc472e;
+}
+.regist .form-item span{
+    position: absolute;
+    top: 12px;
+    left: 0;
+    z-index: 100;
+    display: block;
+    width: 80px;
+    height: 16px;
+    line-height: 15px;
+    color: #a9a9a9;
+    text-align: center;
+    border-right: 1px solid #e0e0e0;
+}
+.regist .form-item input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 310px;
+    height: 36px;
+    padding-left: 90px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background: none;
+}
+.regist .form-email-checkcode,
+.regist .form-phone-checkcode{
+    position: relative;
+    height: 40px;
+    overflow: hidden;
+}
+.regist .form-email-checkcode input,
+.regist .form-phone-checkcode input{
+    width: 240px;
+    height: 36px;
+    float: left;
+    padding-left: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background: none;
+}
+.regist .form-email-checkcode .email_code{
+    width: 220px;
+    margin-right: 10px;
+}
+.regist .form-email-checkcode .btn-change{
+    position: relative;
+    top: -16px;
+    left: 10px;
+    display: inline-block;
+    color: #999999;
+    cursor: pointer;
+}
+.regist .form-phone-checkcode .get-msgcode{
+    display: block;
+    width: 140px;
+    height: 38px;
+    float: left;
+    line-height: 38px;
+    text-align: center;
+    margin-left: 10px;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #579f23;
+}
+.regist .form-phone-checkcode .get-msgcode.disable{
+    background-color: #c8c8c8;cursor: text;
+}
+.regist .form-caluse{
+    position: relative;
+    padding: 20px 0 5px;
+}
+.regist .form-caluse label.error{
+    top: 20px;
+    left: 260px;
+}
+.regist .form-caluse input{
+    position: relative;
+    top: -2px;
+}
+.regist .form-caluse i{
+    color: #999999;
+}
+.regist  .regist-btn{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 402px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #ff552e;
+}
+.regist .form-gologin,
+.regist .form-switch{
+    width: 402px;
+    text-align: right;
+    margin-top: 10px;
+    color: #999999;
+}
+.regist .form-gologin .go-login{
+    color:#579f23;
+}
+.regist .form-gologin .go-regist{
+    float: left;
+}
+.regist .form-switch{
+    color: #0494df;
+    font-size: 12px;
+    cursor: pointer;
+}
+.org-regist .org-regist-img{
+    display: block;
+    width: 232px;
+    height: 174px;
+    margin: 70px auto 20px auto;
+}
+
+.regist .btn-reg-regist{
+    display: block;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    color: #ffffff;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #579f23;
+    border-radius: 5px;
+}
+.regist .btn-reg-regist i{
+    position: relative;
+    top: 5px;
+    left: 20px;
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    margin-right: 20px;
+    background: url(../../images/detail-icon.png) no-repeat;
+    background-position: -145px -82px;
+}
+.org-regist .other-account{
+    width: 300px;
+    margin: 30px auto;
+}
+.regist .org-regist-main{
+    width: 600px;
+    margin: 50px 0 0 340px;
+}
+.regist .org-regist-main .btn-reg-regist{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 402px;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}
+.regist .org-regist-main .form-gologin{
+    color: #999999;
+}
+
+
+/* 注册成功 */
+.regist-succ{
+    padding: 20px;
+}
+.regist-succ .top-tips{
+    border-bottom: 1px solid #e0e0e0;
+}
+.regist-succ .top-tips img{
+    display: block;
+    width: 229px;
+    height: 134px;
+    margin: 0 auto;
+}
+.regist-succ .top-tips h1{
+    text-align: center;
+    color: #ff0000;
+    font-size: 24px;
+    margin: 10px 0;
+}
+.regist-succ .top-tips p{
+    color: #999999;
+    text-align: center;
+}
+.regist-succ .top-tips,
+.regist-succ .bom-tips{
+    padding: 30px 0;
+}
+.regist-succ .bom-tips .text{
+    text-indent: 120px;
+}
+.regist-succ .bom-tips .go-auth{
+    display: block;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 20px auto 10px auto;
+    color: #ffffff;
+    background-color: #23ac38;
+    border-radius: 5px;
+}
+.regist-succ .bom-tips .not-auth{
+    text-align: center;
+}
+.regist-succ .bom-tips .not-auth a{
+    color: #999999;
+    text-decoration: underline;
+}
+/* 验证邮箱 */
+.verify-top{
+    padding: 90px 0 50px;
+}
+.verify-top img{
+    display: block;
+    width: 139px;
+    height: 61px;
+    margin: 0 auto;
+}
+.verify-top h1{
+    color: #666666;
+    font-size: 24px;
+    padding: 20px 0;
+}
+.go-verify-email{
+    display: block;
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto !important;
+    color: #ffffff;
+    background-color: #23ac38;
+    border-radius: 5px;
+}
+.verify-top *,
+.verify-bom *{
+    text-align: center;
+}
+.x-line{
+    width: 550px;
+    height: 1px;
+    margin: 0 auto;
+    background-color: #e0e0e0;
+}
+.verify-bom{
+    padding: 30px 0 50px;
+}
+.verify-bom h3{
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.verify-bom p{
+    color: #999999;
+    padding-bottom: 5px;
+}
+.verify-bom p a{
+    color: #579f23;
+}

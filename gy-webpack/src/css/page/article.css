@@ -1,0 +1,30 @@
+.article{
+    padding: 100px 0;
+}
+.article .article-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.article .article-info{
+    text-align: center;
+    padding: 15px 0 70px;
+}
+.article-main *{max-width:100%}
+.article .article-main img{
+    max-width: 100%;
+}
+.article .article-main div,
+.article .article-main p{
+    line-height: 2;
+}
+.article .article-main div,
+.article .article-main p,
+.article .article-main span{
+    font-size: 16px;
+    font-family: "NSimSun";
+}
+.article .article-main strong,
+.article .article-main b {
+    font-weight: bold;
+}
