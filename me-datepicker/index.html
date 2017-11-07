@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			max-width: 640px;
+			margin: 0 auto;
+		}
+		li {
+			list-style: none;
+		}
+		.box {
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			z-index: 10;
+			width: 100%;
+			height: 200px;
+			background-color: #f5f5f5;
+			display: flex;
+		}
+		.box .flag {
+			position: absolute;
+			top: 90px;
+			left: 0;
+			z-index: 1;
+			width: 100%;
+			height: 30px;
+			background-color: rgba(22,245,146,0.5);
+		}
+		.box .box_item {
+			flex: 1;
+		}
+		.box .box_item ul {
+
+		}
+		.box .box_item ul li{
+			height: 30px;
+			line-height: 30px;
+			text-align: center;
+		}
+
+		#year {
+			transition: transform .5s linear 0s;
+			-webkit-transition: transform .5s linear 0s;
+			transform: translate(0px, -60px) translateZ(0px);
+			-webkit-transform: translate(0px, -60px) translateZ(0px);
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<div class="box_item" id="year">
+				<ul id="year_ul">
+					<li>2010年</li>
+					<li>2011年</li>
+					<li>2012年</li>
+					<li>2013年</li>
+					<li>2014年</li>
+					<li>2015年</li>
+					<li>2016年</li>
+					<li>2017年</li>
+					<li>2018年</li>
+					<li>2019年</li>
+					<li>2020年</li>
+				</ul>
+			</div>
+			<div class="box_item" id="month">
+				<ul>
+					<li>1月</li>
+					<li>2月</li>
+					<li>3月</li>
+					<li>4月</li>
+					<li>5月</li>
+					<li>6月</li>
+					<li>7月</li>
+					<li>8月</li>
+					<li>9月</li>
+					<li>10月</li>
+					<li>11月</li>
+					<li>12月</li>
+				</ul>
+			</div>
+			<div class="box_item" id="day">
+				<ul>
+					<li>1日</li>
+					<li>2日</li>
+					<li>3日</li>
+					<li>4日</li>
+					<li>5日</li>
+					<li>6日</li>
+					<li>7日</li>
+					<li>8日</li>
+					<li>9日</li>
+					<li>10日</li>
+					<li>11日</li>
+				</ul>
+			</div>
+
+			<div class="flag"></div>
+		</div>
+	</div>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			var year = document.getElementById("year");
+			var year_ul = document.getElementById("year_ul");
+
+
+			var startY = 0;
+			var endY = 0;
+			var left = 0;
+			var step = 0;
+
+			var startTime = 0;
+			var endTime = 0;
+			function go(left){
+				left = left + step;
+				year_ul.style.webkitTransform = 'translateY('+(-left)+'px)';
+				//year_ul.style.webkitTransition = 'transform 0ms linear 0s';
+    			//transform: translate(0px, 0px) translateZ(0px);
+			}
+
+
+			year.addEventListener('touchstart',function(e){
+				e.preventDefault();
+				startTime = new Date().getTime();
+				console.log("当前时间:" + startTime);
+				console.log("滑动开始:"+e.touches[0].pageY);
+				startY = e.touches[0].pageY;
+
+			});
+			year.addEventListener('touchmove',function(e){
+				e.preventDefault();
+				//console.log("滑动中:"+e.touches[0].pageY);
+				endY = e.touches[0].pageY;
+				left = startY-endY;
+
+				//console.log(left);
+				
+				if(left > 0){
+					go(left);
+				}else {
+					go(left);
+				}
+
+			});
+			year.addEventListener('touchend',function(e){
+				e.preventDefault();
+				endTime = new Date().getTime();
+				console.log("结束时间:"+endTime);
+				console.log("用时几秒："+(endTime-startTime)/1000);
+				console.log("滑动结束...");
+				step += left;
+
+				console.log(step);
+				console.log(step%30);
+
+				var i = 1;
+				if(((endTime-startTime)/1000)<0.5){
+					//alert("快速滑动");
+					var timer = setInterval(function(){
+						i+=1;
+						console.log(i);
+						if(Math.floor(i) === 20){
+							clearInterval(timer);
+						}
+						step += i;
+						year_ul.style.webkitTransform = 'translateY('+(-step)+'px)';
+					},10);
+				}else {
+					/* 规整位置：
+						如果滑动的距离小于一次的一半，退回到原位
+						如果大于则去到下一个位置
+					 */
+					if(step%40>20){
+						console.log('变成:' + Math.ceil(step/40)*40);
+						step = Math.ceil(step/40)*40;
+					}else {
+						console.log('变成:' + Math.floor(step/40)*40);
+						step = Math.floor(step/40)*40;
+					}
+
+					setTimeout(function(){
+						year_ul.style.webkitTransform = 'translateY('+(-step)+'px)';
+					});
+				}
+		
+			});
+	
+		}
+	</script>
+</body>
+</html>
